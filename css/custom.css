@@ -1,0 +1,18 @@
+#checkAnswersButton, #resetQuiz {
+	width: 20rem;
+	padding: 1rem 1rem;
+	font-size: 3rem;
+}
+#setViewNum{
+	float:right; 
+	border:solid 1px #CCC; 
+	padding:2rem; 
+	margin-bottom:4rem;
+	max-width: 377px;
+	box-shadow: 0px 3px 1px #CCC;
+}
+#setViewNum input[type="text"]{
+	width:8rem; 
+	display:inline-block; 
+	margin-right:1rem;
+}

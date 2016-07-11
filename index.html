@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Available Courses</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <!-- <div id="sidebar-wrapper">
+        </div> -->
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row" id="questions">
+                    <div class="col-lg-12">
+                        <h2>What is Quiz Review? </h2>
+                        <p>This is a quiz review system designed around fill-in-the-blank. Select from the available courses. The course will initially load chapter 1. Any available chapters will be listed in the menu on the left.</p><p>To Show/Hide the menu click on: <span style="color:#008cba;"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Select Chapter Quiz.</span> - The site is responsive, meaning it works on mobile devices.</p><p>Use the <span class="btn-primary">LIMIT DISPLAY</span> feature to slowly learn and retain the information. Try typing <span class="btn-default">1</span> to show only one question. Click the <span class="btn-default">SHOW ALL</span> button to repopulate the entire quiz. When you miss an question, the answer will show up below that question. After clicking <span class="btn-success">SUBMIT</span> the button will say <span class="btn-warning">TRY AGAIN</span>. Clicking this button will reset the quiz, but it will retain the number of questions currently displayed.</p>
+                        <hr />
+                        <h3>Available Courses</h3>
+                    </div>
+                    <div id="courses">
+
+                    </div> <!-- //END available courses links -->
+                             
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="AvailableCourses.js"></script>
+    
+    <!-- Generate Quiz -->
+    <script>
+    createMenu("COM262", menuLink);
+    titleDescription("Chapter 1", description);
+    generateQuiz(ch1Array);
+
+    </script>
+
+</body>
+</html>
